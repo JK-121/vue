@@ -1,8 +1,15 @@
 <template>
-<div>
-    <div>{{ htmlString }}</div>
-    <!-- html로 동작하게 만듦 -->
-    <div v-html="htmlString"></div> 
+    <div>
+        <header>
+            <slot name="header"></slot>
+        </header>
+    
+    <main>
+        <slot name="main"></slot>
+    </main>
+    <footer>
+        <slot name="footer"></slot>
+    </footer>
     </div>
 </template>
 <script>
@@ -11,8 +18,7 @@ export default {
     components: {},
     data() {
         return {
-            htmlString: "<p style='color:red;'>빨간색 글자.</p>",
-            
+            sampleData: ""
         };
     },
     setup() {},

@@ -1,18 +1,16 @@
 <template>
-<div>
-    <div>{{ htmlString }}</div>
-    <!-- html로 동작하게 만듦 -->
-    <div v-html="htmlString"></div> 
+    <div>
+        <Child ref="child_component" />
     </div>
 </template>
 <script>
+import Child from "../components/Child.vue";
 export default {
     name: "",
-    components: {},
+    components: { Child },
     data() {
         return {
-            htmlString: "<p style='color:red;'>빨간색 글자.</p>",
-            
+            sampleData: ""
         };
     },
     setup() {},

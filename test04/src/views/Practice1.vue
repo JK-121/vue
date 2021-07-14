@@ -5,11 +5,11 @@
             <table>
                 <tr style="height: 32.5%;">
                     <td><img src="http://th1.tmon.kr/thumbs/image/3cc/3fa/d56/475318fb7_700x700_95_FIT.jpg"
-                            width="150px;" height="150px;">
+                            style="width:150px; height:150px;">
 
                     </td>
                     <td><img src="http://img.danawa.com/prod_img/500000/188/376/img/5376188_1.jpg?shrink=360:360&_v=20180523170653"
-                            width="130px;" height="130px;">
+                            style="width:130px; height:130px;">
 
                     </td>
                     <td><img src="http://img.danawa.com/prod_img/500000/264/205/img/2205264_1.jpg?shrink=360:360&_v=20180529103258"
@@ -29,15 +29,15 @@
                 </tr>
                 <tr style="height: 32.5%;">
                     <td><img src="https://kr.misumi-ec.com/linked/material/fs/ADO1/PHOTO/10157.jpg?$product_main$"
-                            width="120px;" height="120px;">
+                            style="width:120px; height:120px;">
 
                     </td>
                     <td><img src="http://img.danawa.com/prod_img/500000/191/554/img/2554191_1.jpg?shrink=360:360&_v=20170227171125"
-                            width="160px;" height="160px;">
+                            style="width:160px; height:160px;">
 
                     </td>
                     <td><img src="http://img.danawa.com/prod_img/500000/217/969/img/1969217_1.jpg?shrink=360:360&_v=20170801100349"
-                            width="150px;" height="150px;">
+                            style="width:150px; height:150px;">
 
                     </td>
                 </tr>

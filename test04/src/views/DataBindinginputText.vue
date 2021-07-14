@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- v-model 양방향 -->
         <input type="text" v-model.number="num1 " />
         <input type="number" v-model.number="num1 " />
         <button @click="changeValue()">값 변경</button>

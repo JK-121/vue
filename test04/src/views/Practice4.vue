@@ -9,7 +9,7 @@
       <center>아웃백에 오신걸 환영합니다</center>
     </h1>
     <div>
-      <select name="" id="menu" class="sel" @select="selectMenu(menus.menuName)">
+      <select name="" id="menu" class="sel" @change="selectMenu">
            <option value="" selected hidden>메뉴를 선택하세요.</option>
          <option :value="menu.price" :key="menu.menuId" v-for="menu in menus">{{menu.menuName}}</option>
 
@@ -21,7 +21,7 @@
       &nbsp;
       <label>총액</label>&nbsp;
       <input type="text" style="height: 30px; text-align: right;" id="totalPrice" readonly
-      v-model="totalPrice">
+     v-model="totalprice">
     </div>
     <br>
     <div>
@@ -55,7 +55,7 @@ export default {
     components: {},
     data() {
         return {
-            totalPrice: 0,
+            totalPrice: (this.price * this.qty),
             messsageList: [],
 
             menus : [{
@@ -376,18 +376,7 @@ export default {
         };
     },
     computed: {
-    totalPrice() {
-      // return this.menus
-      //   .filter((m) => m.isSelected)
-      //   .reduce((t, o) => t + o.price * o.qty, 0);
-      var sum = 0;
-      for (var menu of this.menus) {
-        if (menu.isSelected) {
-          sum += menu.price * menu.qty;
-        }
-      }
-      return sum;
-    },
+    
   },
     setup() {},
     created() {
@@ -404,8 +393,12 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-      inputMenu() {
+      selectMenu() {
           
+      },
+
+      inputMenu() {
+
       }
 
     }
